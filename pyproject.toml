@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msst"
+version = "0.1.0"
+description = "Python implementation of the SST_Y synchrosqueezing transform"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+py-modules = ["sst_y", "msst_y", "_transform_utils"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
