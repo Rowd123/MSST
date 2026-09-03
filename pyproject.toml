@@ -15,6 +15,13 @@ test = ["pytest>=7"]
 
 [tool.setuptools]
 py-modules = ["sst_y", "msst_y", "_transform_utils"]
+plot = ["plotly>=5"]
+
+[tool.setuptools]
+py-modules = ["sst_y", "msst_y", "instantaneous_frequency", "_transform_utils"]
+
+[tool.setuptools]
+py-modules = ["sst_y"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
