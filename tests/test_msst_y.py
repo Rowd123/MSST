@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from msst_y import MSST_Y, msst_y
+from msst_y import msst_y
 
 
 def test_returns_msst_and_original_stft():
@@ -16,10 +16,10 @@ def test_returns_msst_and_original_stft():
     assert np.all(np.isfinite(stft))
 
 
-def test_alias_accepts_a_column_vector():
+def test_accepts_a_column_vector():
     signal = np.arange(9, dtype=float)
 
-    actual = MSST_Y(signal[:, None], 3, 1)
+    actual = msst_y(signal[:, None], 3, 1)
     expected = msst_y(signal, 3, 1)
 
     np.testing.assert_allclose(actual[0], expected[0])

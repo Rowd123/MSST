@@ -14,7 +14,7 @@ dependencies = ["numpy>=1.23"]
 test = ["pytest>=7"]
 
 [tool.setuptools]
-py-modules = ["sst_y", "msst_y"]
+py-modules = ["sst_y", "msst_y", "_transform_utils"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -23,9 +23,7 @@ print(Ts.shape)  # (50, 100)
 
 Le signal peut être un tableau unidimensionnel ou un vecteur colonne de forme
 `(n, 1)`. Si `hlength` est omis, sa valeur par défaut est `round(n / 5)`. La
-fonction force ensuite la longueur de fenêtre à être impaire, comme le code
-MATLAB d'origine. L'alias `SST_Y` est également disponible pour faciliter le
-portage de code existant.
+fonction force ensuite la longueur de fenêtre à être impaire.
 
 ## Multi-SST
 
@@ -36,4 +34,4 @@ Ts, stft = msst_y(x, hlength=21, num=2)
 ```
 
 `num` indique le nombre de réallocations successives. La fonction renvoie la
-MSST normalisée et la STFT originale. L'alias `MSST_Y` est aussi disponible.
+MSST normalisée et la STFT originale.
