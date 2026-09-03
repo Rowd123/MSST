@@ -2,6 +2,8 @@
 
 Traduction Python des fonctions MATLAB `SST_Y` et `MSST_Y`, qui calculent les
 transformées synchrosqueezées SST et multi-SST d'un signal.
+Traduction Python de la fonction MATLAB `SST_Y`, qui calcule la transformée
+synchrosqueezée (SST) d'un signal.
 
 ## Installation
 
@@ -56,3 +58,6 @@ python -m examples.plot_instantaneous_frequency mesure.csv \
 Le graphique compare le signal mesuré, la crête fréquentielle de la STFT
 (itération 0) et celles obtenues après chaque nombre d'itérations demandé. Une
 version interactive autonome est aussi écrite dans `frequence_instantanee.html`.
+fonction force ensuite la longueur de fenêtre à être impaire, comme le code
+MATLAB d'origine. L'alias `SST_Y` est également disponible pour faciliter le
+portage de code existant.
