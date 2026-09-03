@@ -12,6 +12,10 @@ dependencies = ["numpy>=1.23"]
 
 [project.optional-dependencies]
 test = ["pytest>=7"]
+plot = ["plotly>=5"]
+
+[tool.setuptools]
+py-modules = ["sst_y", "msst_y", "instantaneous_frequency", "_transform_utils"]
 
 [tool.setuptools]
 py-modules = ["sst_y"]
